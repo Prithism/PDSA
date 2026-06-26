@@ -103,3 +103,15 @@ python w2_grpa2.py
 - **Type Handling:** Mixed-type list processing
 - **Geometry:** Triangle validation and classification
 - **Number Theory:** Prime checking, Goldbach's conjecture
+
+---
+
+## Status & Updates
+
+⚠️ **Note:** GRPAs (Group Programming Assignments) and PPAs (Practice Programming Assignments) will be updated every week by the end of the week.
+
+**Current assignments:**
+- `w1_grpa1.py` - Updated
+- `w1_grpa3.py` - Updated
+- `w1_ppa2.py` - Updated
+- `w2_grpa2.py` - Updated
