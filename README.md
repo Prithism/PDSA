@@ -64,6 +64,24 @@ Implements the **Selection Sort** algorithm using a `Solution` class.
   - `Goldbach(n)`: Returns all pairs of prime numbers that sum to a given even number
 - **Description:** Implements Goldbach's conjecture which states that every even number greater than 2 can be expressed as the sum of two primes. Returns all valid prime pairs (a, b) where a + b = n and a ≤ b.
 
+### Week 2 Practice Programming Assignments (PPAs)
+
+#### `w2_ppa1.py`
+**Binary Search with Comparison Count**
+- **Function:** `binarySearchIndexAndComparisons(L, k)`
+- **Description:** Performs binary search on a sorted list to find a key k and returns both whether the element was found and the number of comparisons made during the search.
+- **Returns:** A tuple `(found: bool, numComparisons: int)`
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+
+#### `w2_ppa2.py`
+**Counting Sort for Limited Range**
+- **Function:** `sortInRange(L, r)`
+- **Description:** Sorts a list of integers in place where all elements are in the range [0, r). Uses counting sort algorithm for efficient sorting without comparison operations.
+- **Time Complexity:** O(n + r)
+- **Space Complexity:** O(r)
+- **Note:** More efficient than comparison-based sorting when r is small relative to n.
+
 ---
 
 ## Project Structure
@@ -115,3 +133,5 @@ python w2_grpa2.py
 - `w1_grpa3.py` - Updated
 - `w1_ppa2.py` - Updated
 - `w2_grpa2.py` - Updated
+- `w2_ppa1.py` - Updated
+- `w2_ppa2.py` - Updated
