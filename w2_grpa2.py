@@ -1,22 +1,28 @@
-def is_prime(num):
-    """Helper function to check if a number is prime."""
-    if num < 2:
-        return False
-    for i in range(2, int(num**0.5) + 1):
-        if num % i == 0:
-            return False
-    return True
-
-def Goldbach(n):
-    """Returns a list of tuples (a, b) where a + b = n and both are prime."""
-    pairs = []
+def findLargest(L):
+    low = 0
+    high = len(L) - 1
     
-    # We only check up to n // 2 to satisfy the condition a <= b
-    for a in range(2, (n // 2) + 1):
-        b = n - a
+    # If the list is not rotated at all or has one element
+    if L[low] <= L[high]:
+        return L[high]
+    
+    while low <= high:
+        mid = (low + high) // 2
         
-        # If both a and its complement b are prime, it's a valid Goldbach pair
-        if is_prime(a) and is_prime(b):
-            pairs.append((a, b))
+        # If mid is the largest (next element is smaller)
+        if mid < len(L) - 1 and L[mid] > L[mid + 1]:
+            return L[mid]
+        
+        # If mid-1 is the largest (mid is the smallest)
+        if mid > 0 and L[mid] < L[mid - 1]:
+            return L[mid - 1]
+        
+        # Decide which half to search
+        if L[mid] > L[low]:
+            # Largest must be in the right half
+            low = mid + 1
+        else:
+            # Largest must be in the left half
+            high = mid - 1
             
-    return pairs
+    return L[low]
