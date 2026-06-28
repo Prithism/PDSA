@@ -55,7 +55,18 @@ Implements the **Selection Sort** algorithm using a `Solution` class.
   - `Area()`: Calculates the area using Heron's formula
 - **Description:** Comprehensive triangle analyzer that validates triangles and provides classifications based on side lengths and angles.
 
-### Number Theory
+### Week 2 Group Programming Assignments (GRPAs)
+
+#### `w2_grpa1.py`
+**Combination Sort - Multi-Key Sorting**
+- **Function:** `combinationSort(strList)`
+- **Description:** Sorts a list of strings with mixed letters and numbers in two different ways:
+  - **L1:** Sorted by the first letter only (ascending)
+  - **L2:** Sorted by letter (ascending), then by remaining number (descending)
+- **Returns:** A tuple of two sorted lists `(L1, L2)`
+- **Example:** For input `["d34", "g54", "d12", "b87", "g1", "c65", "g40", "g5", "d77"]`:
+  - L1: `["b87", "c65", "d34", "d12", "d77", "g54", "g1", "g40", "g5"]`
+  - L2: `["b87", "c65", "d77", "d34", "d12", "g54", "g40", "g5", "g1"]`
 
 #### `w2_grpa2.py`
 **Find Largest Element in Rotated Array**
@@ -65,6 +76,21 @@ Implements the **Selection Sort** algorithm using a `Solution` class.
 - **Time Complexity:** O(log n)
 - **Space Complexity:** O(1)
 - **Algorithm:** Uses binary search to efficiently locate the largest element by determining which half contains the maximum value.
+
+#### `w2_grpa3.py`
+**Merge Two Sorted Arrays In-Place**
+- **Function:** `mergeInPlace(A, B)`
+- **Description:** Merges two sorted arrays A and B in-place by comparing elements and swapping values. Elements are moved between arrays to maintain sorted order in both.
+- **Parameters:** 
+  - `A`: First sorted array (modified in-place)
+  - `B`: Second sorted array (modified in-place during merging)
+- **Algorithm:** Iterates through A, and for each element, compares it with the smallest element of B. If A[i] > B[0], swaps them and re-sorts B to maintain order.
+- **Note:** Assumes custom swap method is available on array objects.
+
+### Number Theory
+
+#### `w2_grpa2.py` (Original - Goldbach's Conjecture)
+**Note:** This file was previously used for Goldbach's Conjecture. It has been updated to Find Largest Element in Rotated Array (see above).
 
 ### Week 2 Practice Programming Assignments (PPAs)
 
@@ -134,6 +160,8 @@ python w2_grpa2.py
 - `w1_grpa1.py` - Updated
 - `w1_grpa3.py` - Updated
 - `w1_ppa2.py` - Updated
+- `w2_grpa1.py` - Updated
 - `w2_grpa2.py` - Updated
+- `w2_grpa3.py` - Updated
 - `w2_ppa1.py` - Updated
 - `w2_ppa2.py` - Updated
