@@ -57,17 +57,6 @@ Implements the **Selection Sort** algorithm using a `Solution` class.
 
 ### Number Theory
 
-#### `w2_grpa1.py`
-**Combination Sort - Multi-Key Sorting**
-- **Function:** `combinationSort(strList)`
-- **Description:** Sorts a list of strings with mixed letters and numbers in two different ways:
-  - **L1:** Sorted by the first letter only (ascending)
-  - **L2:** Sorted by letter (ascending), then by remaining number (descending)
-- **Returns:** A tuple of two sorted lists `(L1, L2)`
-- **Example:** For input `["d34", "g54", "d12", "b87", "g1", "c65", "g40", "g5", "d77"]`:
-  - L1: `["b87", "c65", "d34", "d12", "d77", "g54", "g1", "g40", "g5"]`
-  - L2: `["b87", "c65", "d77", "d34", "d12", "g54", "g40", "g5", "g1"]`
-
 #### `w2_grpa2.py`
 **Goldbach's Conjecture Solver**
 - **Functions:**
@@ -143,7 +132,6 @@ python w2_grpa2.py
 - `w1_grpa1.py` - Updated
 - `w1_grpa3.py` - Updated
 - `w1_ppa2.py` - Updated
-- `w2_grpa1.py` - Updated
 - `w2_grpa2.py` - Updated
 - `w2_ppa1.py` - Updated
 - `w2_ppa2.py` - Updated
