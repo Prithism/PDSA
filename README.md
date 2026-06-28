@@ -58,11 +58,13 @@ Implements the **Selection Sort** algorithm using a `Solution` class.
 ### Number Theory
 
 #### `w2_grpa2.py`
-**Goldbach's Conjecture Solver**
-- **Functions:**
-  - `is_prime(num)`: Helper function to check if a number is prime
-  - `Goldbach(n)`: Returns all pairs of prime numbers that sum to a given even number
-- **Description:** Implements Goldbach's conjecture which states that every even number greater than 2 can be expressed as the sum of two primes. Returns all valid prime pairs (a, b) where a + b = n and a ≤ b.
+**Find Largest Element in Rotated Array**
+- **Function:** `findLargest(L)`
+- **Description:** Finds the largest element in a rotated sorted array using binary search. Handles cases where the array may or may not be rotated.
+- **Returns:** The maximum element in the array
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+- **Algorithm:** Uses binary search to efficiently locate the largest element by determining which half contains the maximum value.
 
 ### Week 2 Practice Programming Assignments (PPAs)
 
