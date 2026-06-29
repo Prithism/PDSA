@@ -1,0 +1,34 @@
+
+
+def quick_sort(L, low, high):
+
+    if low < high:
+
+        pivot = L[low]
+        i = low + 1
+        j = high
+
+        while True:
+
+            while (i<= j) and (L[i] <= pivot):
+                i += 1
+
+            while (i <= j) and (L[j] >= pivot):
+                j -= 1
+
+
+            if i <= j:
+                L[i], L[j] = L[j], L[i]
+            else:
+                break
+
+        L[low]  ,L[j] = L[j], L[low]
+
+        quick_sort(L, low, j - 1) # for the left half
+        quick_sort(L, j + 1, high) # for the right half
+        
+Ar = [14, 23, 8, 5, 42, 7]
+quick_sort(Ar, 0, len(Ar) - 1)
+print(Ar)
+
+# quick_sort()
